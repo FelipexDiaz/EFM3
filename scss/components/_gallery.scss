@@ -1,0 +1,51 @@
+.gallery {
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  &__carousel {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    border-radius: 0.5rem;
+    object-fit: cover;
+    height: 400px;
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+  }
+
+.gallery__carousel {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 16 16'%3E%3Cpath stroke='red' stroke-width='2' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 16 16'%3E%3Cpath stroke='red' stroke-width='2' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 1 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+
+
+}

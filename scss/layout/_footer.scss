@@ -1,0 +1,15 @@
+.footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: $padding-base 0;
+  text-align: center;
+
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+  }
+}

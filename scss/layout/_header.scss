@@ -1,0 +1,15 @@
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: $padding-base 0;
+
+  &__container {
+    @include flex-center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: $font-main;
+    font-size: 1.5rem;
+  }
+}

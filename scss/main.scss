@@ -1,0 +1,21 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+// Importar Bootstrap desde node_modules
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'themes/bootstrap-overrides';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/form';
+@import 'components/parallax';
+@import 'components/gallery';
+
+@import 'pages/home';

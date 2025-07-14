@@ -1,0 +1,33 @@
+.form {
+  box-sizing: border-box;
+  padding: $padding-base;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+
+  &__group {
+    margin-bottom: 1rem;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid $secondary-color;
+    border-radius: 0.25rem;
+  }
+
+  &__submit {
+    @include flex-center;
+  }
+
+  &--highlight {
+    border: 2px solid $terciary-color;
+  }  
+}

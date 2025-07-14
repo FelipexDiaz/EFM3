@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Interfaz Web</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container header__container">
+        <h1 class="header__title">Evaluación Final de Módulo 3</h1>
+        <button class="btn btn-primary header__button">Inicio</button>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section class="parallax">
+        <div class="parallax__content container">
+          <h2 class="parallax__title">Efecto Parallax</h2>
+          <p class="parallax__text">
+            Este contenido se desplaza a diferente velocidad que el fondo.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery container my-5">
+        <h2 class="gallery__title">Galería de Imágenes</h2>
+        <div
+          id="galleryCarousel"
+          class="carousel slide gallery__carousel"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/img/1.jpg"
+                class="d-block w-100 gallery__image"
+                alt="Imagen 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/2.jpg"
+                class="d-block w-100 gallery__image"
+                alt="Imagen 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/3.jpg"
+                class="d-block w-100 gallery__image"
+                alt="Imagen 3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#galleryCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="card card--highlight">
+        <div class="card__body">
+          <h2 class="card__title">Título de la tarjeta</h2>
+          <p class="card__text">Contenido de la tarjeta</p>
+          <a href="#" class="btn btn-secondary card__button">Link Boton</a>
+        </div>
+      </section>
+
+      <section class="form form--highlight">
+        <form class="form">
+          <div class="mb-3 form__group">
+            <h2 class="form__title">Formulario</h2>
+            <label class="form__label" for="nombre">Nombre</label>
+            <input type="text" class="form-control form__input" id="nombre" />
+          </div>
+          <button type="submit" class="btn btn-success form__submit">
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__text">© 2025 Evaluación Final de Módulo 3</p>
+      </div>
+    </footer>
+
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+  </body>
+</html>
