@@ -1,0 +1,15 @@
+.highlight-card {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    color: #444;
+    margin-bottom: 1rem;
+  }
+}

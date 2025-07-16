@@ -3,105 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Interfaz Web</title>
+    <title>Bienvenidos a Mundo Capibara</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body class="page">
-    <header class="header">
-      <div class="container header__container">
-        <h1 class="header__title">Evaluación Final de Módulo 3</h1>
-        <button class="btn btn-primary header__button">Inicio</button>
-      </div>
+    <header class="header py-4 bg-light border-bottom">
+      <nav class="nav d-flex justify-content-center">
+        <a class="nav__link mx-3" href="index.html">Inicio</a>
+        <a class="nav__link mx-3" href="historia.html">Historia</a>
+        <a class="nav__link mx-3" href="habitat.html">Hábitat</a>
+        <a class="nav__link mx-3" href="alimentacion.html">Alimentación</a>
+        <a class="nav__link mx-3" href="galeria.html">Galeria</a>
+        <a class="nav__link mx-3" href="contacto.html">Contacto</a>
+      </nav>
     </header>
 
     <main class="main container">
-      <section class="parallax">
-        <div class="parallax__content container">
-          <h2 class="parallax__title">Efecto Parallax</h2>
-          <p class="parallax__text">
-            Este contenido se desplaza a diferente velocidad que el fondo.
-          </p>
-        </div>
+      <!-- Hero -->
+      <section class="hero container text-center my-5">
+        <h1 class="hero__title mb-3">Bienvenidos a Mundo Capibara</h1>
+        <p class="hero__subtitle mb-4">
+          Descubre al roedor más grande y adorable del planeta
+        </p>
+        <img
+          src="img/hero.jpg"
+          class="hero__image img-fluid rounded"
+          alt="Capibara feliz"
+        />
       </section>
 
-      <section class="gallery container my-5">
-        <h2 class="gallery__title">Galería de Imágenes</h2>
-        <div
-          id="galleryCarousel"
-          class="carousel slide gallery__carousel"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="img/1.jpg"
-                class="d-block w-100 gallery__image"
-                alt="Imagen 1"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/2.jpg"
-                class="d-block w-100 gallery__image"
-                alt="Imagen 2"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="img/3.jpg"
-                class="d-block w-100 gallery__image"
-                alt="Imagen 3"
-              />
+      <!-- Tarjetas informativas -->
+      <section class="highlights container my-5">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="highlight-card p-3">
+              <h2 class="highlight-card__title">Historia</h2>
+              <p class="highlight-card__text">
+                Conoce el origen y evolución de los capibaras.
+              </p>
+              <a href="historia.html" class="btn btn-outline-primary btn-sm"
+                >Leer más</a
+              >
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#galleryCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#galleryCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-      </section>
-
-      <section class="card card--highlight">
-        <div class="card__body">
-          <h2 class="card__title">Título de la tarjeta</h2>
-          <p class="card__text">Contenido de la tarjeta</p>
-          <a href="#" class="btn btn-secondary card__button">Link Boton</a>
-        </div>
-      </section>
-
-      <section class="form form--highlight">
-        <form class="form">
-          <div class="mb-3 form__group">
-            <h2 class="form__title">Formulario</h2>
-            <label class="form__label" for="nombre">Nombre</label>
-            <input type="text" class="form-control form__input" id="nombre" />
+          <div class="col-md-4">
+            <div class="highlight-card p-3">
+              <h2 class="highlight-card__title">Hábitat</h2>
+              <p class="highlight-card__text">
+                Descubre dónde viven los capibaras y por qué.
+              </p>
+              <a href="habitat.html" class="btn btn-outline-primary btn-sm"
+                >Leer más</a
+              >
+            </div>
           </div>
-          <button type="submit" class="btn btn-success form__submit">
-            Enviar
-          </button>
-        </form>
+          <div class="col-md-4">
+            <div class="highlight-card p-3">
+              <h2 class="highlight-card__title">Alimentación</h2>
+              <p class="highlight-card__text">
+                Aprende qué comen y cómo se alimentan.
+              </p>
+              <a href="alimentacion.html" class="btn btn-outline-primary btn-sm"
+                >Leer más</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Curiosidades Avanzadas -->
+      <section class="curiosities container my-5">
+        <h2 class="curiosities__title text-center mb-4">
+          Curiosidades del Capibara
+        </h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="curiosities__card p-4 text-center">
+              <i class="fas fa-paw curiosities__icon"></i>
+              <h3 class="curiosities__card-title">Amistosos con todos</h3>
+              <p class="curiosities__card-text">
+                El capibara se lleva bien con perros, patos, gatos ¡y hasta
+                monos!
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="curiosities__card p-4 text-center">
+              <i class="fas fa-water curiosities__icon"></i>
+              <h3 class="curiosities__card-title">Amo del agua</h3>
+              <p class="curiosities__card-text">
+                Puede nadar y sumergirse por más de 5 minutos gracias a sus
+                membranas interdigitales.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="curiosities__card p-4 text-center">
+              <i class="fas fa-comment-dots curiosities__icon"></i>
+              <h3 class="curiosities__card-title">Gran comunicador</h3>
+              <p class="curiosities__card-text">
+                Emite hasta 10 tipos de sonidos diferentes para interactuar con
+                su grupo.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__container">
-        <p class="footer__text">© 2025 Evaluación Final de Módulo 3</p>
+    <footer class="footer py-4 bg-light border-bottom">
+      <div class="container">
+        <p class="footer__text">© 2025 Mundo Capibara</p>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

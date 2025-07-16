@@ -1,6 +1,6 @@
 .parallax {
   position: relative;
-  height: 400px;
+  min-height: 400px; // ✅ Esto permite crecer si hay más contenido
   background-image: url('../img/parallax-bg.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -9,8 +9,10 @@
   align-items: center;
   color: white;
   text-align: center;
+  flex-direction: column; // ✅ necesario para apilar contenido verticalmente
+  padding: 4rem 2rem; // ✅ agrega espacio interno
 
-  &__content {
+    &__content {
     @include flex-center;
     flex-direction: column;
     width: 100%;

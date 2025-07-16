@@ -1,3 +1,28 @@
+.gallery__carousel {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+
 .gallery {
   &__title {
     text-align: center;
@@ -18,8 +43,8 @@
   }
 
   &__image {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
     margin: 0 auto;
     border-radius: 0.5rem;
@@ -44,6 +69,82 @@
 
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 16 16'%3E%3Cpath stroke='red' stroke-width='2' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 1 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+
+.gallery {
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__carousel {
+    position: relative;
+
+    &-inner {
+      // Puedes agregar estilos aquí si quieres
+    }
+
+    &-item {
+      // estilos para cada item, si es necesario
+    }
+
+    &__image {
+      cursor: pointer;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    &__control {
+      width: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &--prev {
+        left: 0;
+      }
+
+      &--next {
+        right: 0;
+      }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+    }
+  }
+}
+
+.modal {
+  &__content {
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  &__body {
+    padding: 0;
+
+    .modal__image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    filter: invert(1); // botón blanco para visibilidad
+  }
 }
 
 

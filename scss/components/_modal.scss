@@ -1,0 +1,64 @@
+.modal {
+  &__content {
+    position: relative;  // importante para posicionar el botón dentro del modal
+  }
+
+  &__body {
+    padding: 0;
+
+    .modal__image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1051;  // para que quede encima de todo
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+  }
+}
+
+.modal-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none; /* oculto por defecto */
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.modal-message[aria-hidden="false"] {
+  display: flex;
+}
+
+.modal-message__content {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  position: relative;
+  min-width: 300px;
+  text-align: center;
+}
+
+.modal-message__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
